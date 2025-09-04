@@ -1,0 +1,82 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-primary: #7c3aed;
+  --color-on-primary: #f5f5f5;
+  --color-primary-hover: #8b5cf6;
+  --color-primary-active: #4c1d95;
+
+  --color-primary-container: #c4b5fd;
+  --color-on-primary-container: #4c1d95;
+  --color-primary-container-hover: #ddd6fe;
+  --color-primary-container-active: #a78bfa;
+
+  --color-secondary: #2563eb;
+  --color-on-secondary: #ffffff;
+  --color-secondary-hover: #3b82f6;
+  --color-secondary-active: #1e40af;
+
+  --color-secondary-container: #93c5fd;
+  --color-on-secondary-container: #1e40af;
+  --color-secondary-container-hover: #bfdbfe;
+  --color-secondary-container-active: #60a5fa;
+
+  --color-tertiary: #f472b6;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-hover: #fb7185;
+  --color-tertiary-active: #9f1239;
+
+  --color-tertiary-container: #fcd5e0;
+  --color-on-tertiary-container: #9f1239;
+  --color-tertiary-container-hover: #fbb6ce;
+  --color-tertiary-container-active: #f472b6;
+
+  --color-neutral-0: #000000;
+  --color-neutral-10: #1a1a1a;
+  --color-neutral-20: #2e2e2e;
+  --color-neutral-30: #434343;
+  --color-neutral-40: #5a5a5a;
+  --color-neutral-50: #727272;
+  --color-neutral-60: #8c8c8c;
+  --color-neutral-70: #a6a6a6;
+  --color-neutral-80: #c2c2c2;
+  --color-neutral-90: #e0e0e0;
+  --color-neutral-95: #f2f2f2;
+  --color-neutral-99: #fcfcfc;
+  --color-neutral-100: #ffffff;
+
+  --color-surface: #fdfcff;
+  --color-on-surface: #1d1b20;
+  --color-surface-active: #f5f4fe;
+  --color-surface-dim: #d8d8d8;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f4f4;
+  --color-surface-container: #ededed;
+  --color-surface-container-high: #ece6f0;
+  --color-surface-container-highest: #dfdfdf;
+
+  --color-surface-variant: #e7e0ec; /* ví dụ theo M3 light theme */
+  --color-on-surface-variant: #49454f;
+
+  --color-surface-dark: #121212;
+  --color-on-surface-dark: #ffffff;
+
+  --color-danger: #ef4444;
+  --color-on-danger: #ffffff;
+  --color-danger-hover: #dc2626;
+  --color-danger-active: #b91c1c;
+
+  --color-warning: #f59e0b;
+  --color-on-warning: #212121;
+  --color-warning-hover: #d97706;
+  --color-warning-active: #b45309;
+
+  --color-success: #10b981;
+  --color-on-success: #ffffff;
+  --color-success-hover: #059669;
+  --color-success-active: #047857;
+
+  --color-outline: #79747e;
+}

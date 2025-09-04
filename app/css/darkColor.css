@@ -1,0 +1,9 @@
+[data-theme="dark"] {
+  --background: #171717;
+  --color-surface: #141218;
+  --color-surface-variant: #49454f;
+  --color-surface-container-high: #2b2930;
+  --color-on-surface: #e6e0e9;
+  --color-on-surface-variant: #cac4d0;
+  --color-outline: #938f99;
+}

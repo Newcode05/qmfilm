@@ -1,0 +1,37 @@
+:root {
+  --animation-expressive-fast-spatial: cubic-bezier(0.42, 1.67, 0.21, 0.9);
+  --animation-expressive-default-spatial: cubic-bezier(0.38, 1.21, 0.22, 1);
+  --animation-expressive-slow-spatial: cubic-bezier(0.39, 1.29, 0.35, 0.98);
+
+  --animation-expressive-fast-effects: cubic-bezier(0.31, 0.94, 0.34, 1);
+  --animation-expressive-default-effects: cubic-bezier(0.34, 0.8, 0.34, 1);
+  --animation-expressive-slow-effects: cubic-bezier(0.34, 0.88, 0.34, 1);
+
+  --animation-standard-fast-spatial: cubic-bezier(0.27, 1.06, 0.18, 1);
+  --animation-standard-default-spatial: cubic-bezier(0.27, 1.06, 0.18, 1);
+  --animation-standard-slow-spatial: cubic-bezier(0.27, 1.06, 0.18, 1);
+
+  --animation-standard-fast-effects: cubic-bezier(0.31, 0.94, 0.34, 1);
+  --animation-standard-default-effects: cubic-bezier(0.34, 0.8, 0.34, 1);
+  --animation-standard-slow-effects: cubic-bezier(0.34, 0.88, 0.34, 1);
+
+  --animation-duration-short1: 0.05;
+  --animation-duration-short2: 0.1;
+  --animation-duration-short3: 0.15;
+  --animation-duration-short4: 0.2;
+
+  --animation-duration-medium1: 0.25;
+  --animation-duration-medium2: 0.3;
+  --animation-duration-medium3: 0.35;
+  --animation-duration-medium4: 0.4;
+
+  --animation-duration-long1: 0.45;
+  --animation-duration-long2: 0.5;
+  --animation-duration-long3: 0.55;
+  --animation-duration-long4: 0.6;
+
+  --animation-duration-extralong1: 0.7;
+  --animation-duration-extralong2: 0.8;
+  --animation-duration-extralong3: 0.9;
+  --animation-duration-extralong1: 1;
+}

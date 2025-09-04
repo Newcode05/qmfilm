@@ -1,0 +1,107 @@
+:root {
+  --typescale-brand: Roboto;
+
+  /*Display Large*/
+  --typescale-display-large-font: Roboto;
+  --typescale-display-large-weight: 400;
+  --typescale-display-large-size: 57px;
+  --typescale-display-large-line-height: 64px;
+  --typescale-display-large-tracking: -0.25px;
+
+  /*Display Medium*/
+  --typescale-display-medium-font: Roboto;
+  --typescale-display-medium-weight: 400;
+  --typescale-display-medium-size: 45px;
+  --typescale-display-medium-line-height: 52px;
+  --typescale-display-medium-tracking: 0px;
+
+  /*Display small*/
+  --typescale-display-medium-font: Roboto;
+  --typescale-display-medium-weight: 400;
+  --typescale-display-medium-size: 36px;
+  --typescale-display-medium-line-height: 44px;
+  --typescale-display-medium-tracking: 0px;
+
+  /*Headline large*/
+  --typescale-headline-large-font: Roboto;
+  --typescale-headline-large-weight: 400;
+  --typescale-headline-large-size: 32px;
+  --typescale-headline-large-line-height: 40px;
+  --typescale-headline-large-tracking: 0px;
+
+  /*Headline medium*/
+  --typescale-headline-medium-font: Roboto;
+  --typescale-headline-medium-weight: 400;
+  --typescale-headline-medium-size: 28px;
+  --typescale-headline-medium-line-height: 36px;
+  --typescale-headline-medium-tracking: 0px;
+  /*Headline small*/
+  --typescale-headline-small-font: Roboto;
+  --typescale-headline-small-weight: 400;
+  --typescale-headline-small-size: 24px;
+  --typescale-headline-small-line-height: 32px;
+  --typescale-headline-small-tracking: 0px;
+
+  /*Title large*/
+  --typescale-title-large-font: Roboto;
+  --typescale-title-large-weight: 400;
+  --typescale-title-large-size: 22px;
+  --typescale-title-large-line-height: 28px;
+  --typescale-title-large-tracking: 0px;
+
+  /*Title medium*/
+  --typescale-title-medium-font: Roboto;
+  --typescale-title-medium-weight: 500;
+  --typescale-title-medium-size: 16px;
+  --typescale-title-medium-line-height: 24px;
+  --typescale-title-medium-tracking: 0.15px;
+
+  /*Title small*/
+  --typescale-title-small-font: Roboto;
+  --typescale-title-small-weight: 500;
+  --typescale-title-small-size: 14px;
+  --typescale-title-small-line-height: 20px;
+  --typescale-title-small-tracking: 0.1px;
+
+  /*Body large*/
+  --typescale-body-large-font: Roboto;
+  --typescale-body-large-weight: 400;
+  --typescale-body-large-size: 16px;
+  --typescale-body-large-line-height: 24px;
+  --typescale-body-large-tracking: 0.5px;
+
+  /*Body medium*/
+  --typescale-body-medium-font: Roboto;
+  --typescale-body-medium-weight: 400;
+  --typescale-body-medium-size: 14px;
+  --typescale-body-medium-line-height: 20px;
+  --typescale-body-medium-tracking: 0.25px;
+
+  /*Body small*/
+  --typescale-body-small-font: Roboto;
+  --typescale-body-small-weight: 400;
+  --typescale-body-small-size: 12px;
+  --typescale-body-small-line-height: 16px;
+  --typescale-body-small-tracking: 0.4px;
+
+  /*Label large*/
+  --typescale-label-large-font: Roboto;
+  --typescale-label-large-weight: 500;
+  --typescale-label-large-size: 14px;
+  --typescale-label-large-line-height: 20px;
+  --typescale-label-large-tracking: 0.1px;
+
+  /*Label medium*/
+  --typescale-label-medium-font: Roboto;
+  --typescale-label-medium-weight: 500;
+  --typescale-label-medium-size: 12px;
+  --typescale-label-medium-line-height: 16px;
+  --typescale-label-medium-tracking: 0.5px;
+
+  /*Label small*/
+  --typescale-label-small-font: Roboto;
+  --typescale-label-small-weight: 500;
+  --typescale-label-small-size: 11px;
+  --typescale-label-small-line-height: 16px;
+  --typescale-label-small-tracking: 0.5px;
+}
