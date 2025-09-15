@@ -2,7 +2,7 @@
 import button from "./app/token/button/button.json";
 
 import fab from "./app/token/fab/fab.json";
-
+import fabExtend from "./app/token/fab/fabExtend.json";
 export default {
   darkMode: "class",
   content: [
@@ -129,33 +129,7 @@ export default {
         "5xl": "3rem",
         ...button.fontsize,
         ...fab.fontSize,
-        "fab-ex-label-sm": [
-          "16px",
-          {
-            fontWeight: "500",
-            lineHeight: "24px",
-            letterSpacing: "0.15px",
-          },
-        ],
-
-        "fab-ex-label-md": [
-          "22px",
-          {
-            fontWeight: "400",
-            lineHeight: "28",
-            letterSpacing: "0",
-          },
-        ],
-
-        "fab-ex-label-lg": [
-          "24px",
-          {
-            fontWeight: "400",
-            lineHeight: "32",
-            letterSpacing: "0",
-          },
-        ],
-
+        ...fabExtend.fontSize,
         "search-bar": [
           "16px",
           {
@@ -175,11 +149,7 @@ export default {
       },
       height: {
         ...button.height,
-
-        "fab-ex-sm": "56px",
-        "fab-ex-md": "80px",
-        "fab-ex-lg": "96px",
-
+        ...fabExtend.height,
         "search-bar": "56px",
       },
       width: {
@@ -198,17 +168,8 @@ export default {
         16: "4rem",
         20: "5rem",
         24: "6rem",
-
         ...button.spacing,
-
-        "fab-ex-x-sm": "16px",
-        "fab-ex-x-md": "26px",
-        "fab-ex-x-lg": "28px",
-
-        "fab-ex-gap-sm": "8px",
-        "fab-ex-gap-md": "12px",
-        "fab-ex-gap-lg": "16px",
-
+        ...fabExtend.spacing,
         "search-bar-gap": "16px",
         "search-bar-x": "16px",
       },

@@ -1,0 +1,44 @@
+{
+  "fontSize": {
+    "fab-ex-label-sm": [
+      "16px",
+      {
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "0.15px"
+      }
+    ],
+
+    "fab-ex-label-md": [
+      "22px",
+      {
+        "fontWeight": "400",
+        "lineHeight": "28",
+        "letterSpacing": "0"
+      }
+    ],
+
+    "fab-ex-label-lg": [
+      "24px",
+      {
+        "fontWeight": "400",
+        "lineHeight": "32",
+        "letterSpacing": "0"
+      }
+    ]
+  },
+  "height": {
+    "fab-ex-sm": "56px",
+    "fab-ex-md": "80px",
+    "fab-ex-lg": "96px"
+  },
+  "spacing": {
+    "fab-ex-x-sm": "16px",
+    "fab-ex-x-md": "26px",
+    "fab-ex-x-lg": "28px",
+
+    "fab-ex-gap-sm": "8px",
+    "fab-ex-gap-md": "12px",
+    "fab-ex-gap-lg": "16px"
+  }
+}
