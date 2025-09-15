@@ -1,0 +1,22 @@
+.fab {
+  @apply relative flex justify-center items-center shadow-elevation3 hover:shadow-elevation4 active:shadow-elevation3 cursor-pointer focus-visible:ring-2 focus-visible:ring-offset-2 m-4 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:pointer-events-none;
+}
+.fab-sm {
+  @apply h-fab-ex-sm w-fab-sm rounded-fab-sm text-fab-label-sm;
+}
+.fab-md {
+  @apply h-fab-ex-md w-fab-md rounded-fab-md text-fab-label-md;
+}
+.fab-lg {
+  @apply h-fab-ex-lg w-fab-lg rounded-fab-lg text-fab-label-lg;
+}
+
+.fab-ex-sm {
+  @apply h-fab-ex-sm gap-fab-ex-gap-sm px-fab-ex-x-sm rounded-fab-sm text-fab-ex-label-sm;
+}
+.fab-ex-md {
+  @apply h-fab-ex-md gap-fab-ex-gap-md px-fab-ex-x-md rounded-fab-md text-fab-ex-label-md;
+}
+.fab-ex-lg {
+  @apply h-fab-ex-lg gap-fab-ex-gap-lg px-fab-ex-x-lg rounded-fab-lg text-fab-ex-label-lg;
+}

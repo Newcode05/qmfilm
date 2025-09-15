@@ -1,0 +1,21 @@
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold cursor-pointer transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-xs {
+    @apply h-btn-xs px-btn-x-xs text-btn-label-xs;
+  }
+  .btn-sm {
+    @apply h-btn-sm px-btn-x-sm text-btn-label-sm;
+  }
+  .btn-md {
+    @apply h-btn-md px-btn-x-md text-btn-label-md;
+  }
+
+  .btn-lg {
+    @apply h-btn-lg px-btn-x-lg text-btn-label-lg;
+  }
+  .btn-xl {
+    @apply h-btn-xl px-btn-x-xl text-btn-label-xl;
+  }
+}
