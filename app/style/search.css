@@ -3,7 +3,7 @@
     @apply relative min-w-[360px] max-w-[720px] 
     h-search-bar px-search-bar-x rounded-[28px] 
     flex flex-row justify-start items-center 
-    gap-search-bar-gap transition-all
+    gap-search-bar-gap
     overflow-hidden
     before:content-['']
     before:absolute before:inset-0

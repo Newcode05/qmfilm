@@ -1,27 +1,16 @@
-import React from "react";
-import { SearchBar } from "./SearchBar/SearchBar";
-import { SearchView } from "./SearchView/SearchView";
-import { useTransitionContainer } from "@/app/hooks/transitionContainer/useTransitionContainer";
-
-export const Search = () => {
-  const { originRef, targetRef, isOpen, isExtend, open, close, overlayNode } =
-    useTransitionContainer();
-
+import React, { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import { SearchProps } from "./search.type";
+export const Search: React.FC<SearchProps> = ({
+  searchBar,
+  searchView,
+  isOpen = false,
+  ...props
+}) => {
   return (
-    <div className="relative h-[500px]">
-      <SearchBar
-        ref={originRef}
-        onClick={open}
-        className={`${isOpen ? "opacity-0" : "opacity-100"}`}
-      />
-
-      <SearchView
-        ref={targetRef}
-        className={`${
-          isExtend ? "fade-enter-active" : "fade-enter"
-        } pointer-events-none fade`}
-      />
-
+    <div className="relative h-[500px]" {...props}>
+      <AnimatePresence>{!isOpen ? searchBar : searchView}</AnimatePresence>
     </div>
   );
 };
+
