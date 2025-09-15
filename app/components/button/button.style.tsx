@@ -6,8 +6,7 @@ type ButtonVariant =
   | "outlined"
   | "elevated"
   | "icon"
-  | "text"
-  | "fab";
+  | "text";
 type ButtonColor = "primary" | "secondary" | "success" | "warning" | "danger";
 const buttonStyle: {
   variant: ButtonVariant;
@@ -18,44 +17,44 @@ const buttonStyle: {
     variant: "filled",
     color: "primary",
     class:
-      "bg-primary text-on-primary hover:bg-primary-hover active:bg-primary-active",
+      "bg-primary text-on-primary hover:before:bg-on-primary active:before:bg-on-primary focus-visible:before:bg-on-primary",
   },
   {
     variant: "filled",
     color: "secondary",
     class:
-      "bg-secondary text-on-secondary hover:bg-secondary-hover active:bg-secondary-active",
+      "bg-secondary text-on-secondary hover:before:bg-on-secondary active:before:bg-on-secondary focus-visible:before:bg-on-secondary",
   },
   {
     variant: "filled",
     color: "danger",
     class:
-      "bg-danger text-on-danger hover:bg-danger-hover active:bg-danger-active",
+      "bg-danger text-on-danger hover:before:bg-on-danger active:before:bg-on-danger focus-visible:before:bg-on-danger",
   },
   {
     variant: "filled",
     color: "warning",
     class:
-      "bg-warning text-on-warning hover:bg-warning-hover active:bg-warning-active",
+      "bg-warning text-on-warning hover:before:bg-on-warning active:before:bg-on-warning focus-visible:before:bg-on-warning",
   },
   {
     variant: "filled",
     color: "success",
     class:
-      "bg-success text-on-success hover:bg-success-hover active:bg-success-active",
+      "bg-success text-on-success hover:before:bg-on-success active:before:bg-on-success focus-visible:before:bg-on-success",
   },
   //Tonal
   {
     variant: "tonal",
     color: "primary",
     class:
-      "bg-primary-container text-on-primary-container hover:bg-primary-container-hover active:bg-primary-conatiner-active",
+      "bg-primary-container text-on-primary-container hover:before:bg-on-primary-container active:before:bg-on-primary-container focus-visible:before:bg-on-primary-container",
   },
   {
     variant: "tonal",
     color: "secondary",
     class:
-      "bg-secondary-container text-on-secondary-container hover:bg-secondary-container-hover active:bg-secondary-container-active",
+      "bg-secondary-container text-on-secondary-container hover:before:bg-on-secondary-container active:before:bg-on-secondary-container focus-visible:before:bg-on-secondary-container",
   },
   //Outlined
   {
@@ -104,7 +103,7 @@ const buttonStyle: {
   },
 ];
 
-export const button= tv({
+export const button = tv({
   base: "btn",
   variants: {
     shape: {
@@ -112,14 +111,13 @@ export const button= tv({
       square: "",
     },
     variant: {
-      filled: "active:translate-y-[1px] active:scale-[0.98] active:shadow-sm",
-      tonal: "active:translate-y-[1px] active:scale-[0.98]",
-      elevated:
-        "shadow-md hover:shadow-lg active:shadow-sm active:bg-surface-active",
-      outlined: "active:translate-y-[1px] active:scale-[0.98]",
-      text: "hover:bg-primary/10 active:bg-primary/20 active:translate-y-[1px] active:scale-[0.98]",
-      icon: "px-0! aspect-square flex justify-center items-center hover:bg-primary/90 active:bg-primary/80 active:translate-y-[1px] active:scale-[0.98]",
-      fab: "",
+      filled:
+        "hover:before:bg-on-primary active:before:bg-on-primary focus-visible:before:bg-on-primary",
+      tonal: "",
+      elevated: "active:shadow-sm active:bg-surface-active",
+      outlined: "",
+      text: "hover:bg-primary/10 active:bg-primary/20",
+      icon: "px-0! aspect-square flex justify-center items-center hover:bg-primary/90 active:bg-primary/80",
     },
     color: {
       primary: "",
