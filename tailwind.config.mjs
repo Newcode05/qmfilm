@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 import button from "./app/token/button/button.json";
+
+import fab from "./app/token/fab/fab.json";
+
 export default {
   darkMode: "class",
   content: [
@@ -125,7 +128,7 @@ export default {
         "4xl": "2.25rem",
         "5xl": "3rem",
         ...button.fontsize,
-
+        ...fab.fontSize,
         "fab-ex-label-sm": [
           "16px",
           {
@@ -152,9 +155,6 @@ export default {
             letterSpacing: "0",
           },
         ],
-        "fab-label-sm": "24px",
-        "fab-label-md": "28px",
-        "fab-label-lg": "36px",
 
         "search-bar": [
           "16px",
@@ -183,9 +183,7 @@ export default {
         "search-bar": "56px",
       },
       width: {
-        "fab-sm": "56px",
-        "fab-md": "80px",
-        "fab-lg": "96px",
+        ...fab.width,
       },
       spacing: {
         1: "0.25rem",
@@ -224,13 +222,8 @@ export default {
         "3xl": "2rem",
         "4xl": "3rem",
         full: "9999px",
-
         ...button.borderRadius,
-
-        "fab-sm": "16px",
-        "fab-md": "20px",
-        "fab-lg": "28px",
-
+        ...fab.borderRadius,
         "search-bar": "9999px",
       },
       boxShadow: {
