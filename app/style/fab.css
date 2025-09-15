@@ -1,5 +1,17 @@
 .fab {
-  @apply relative flex justify-center items-center shadow-elevation3 hover:shadow-elevation4 active:shadow-elevation3 cursor-pointer focus-visible:ring-2 focus-visible:ring-offset-2 m-4 before:content-[''] before:absolute before:inset-0 before:opacity-0 before:pointer-events-none;
+  @apply relative m-4 
+  flex justify-center items-center 
+  shadow-elevation3 
+  hover:shadow-elevation4 
+  hover:before:opacity-[0.08]
+  active:shadow-elevation3 
+  active:before:opacity-[0.1]
+  cursor-pointer 
+  focus-visible:ring-2 focus-visible:ring-offset-2
+  focus-visible:before:opacity-[0.1]
+  before:content-[''] before:absolute 
+  before:inset-0 before:opacity-0 
+  before:pointer-events-none;
 }
 .fab-sm {
   @apply h-fab-ex-sm w-fab-sm rounded-fab-sm [&>svg]:w-[24px] [&>svg]:h-[24px];

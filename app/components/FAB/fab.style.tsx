@@ -9,17 +9,17 @@ export const fabStyle = tv({
     },
     color: {
       primary:
-        "bg-primary text-on-primary hover:bg-primary-hover active:bg-primary-active",
+        "bg-primary text-on-primary hover:before:bg-on-primary active:before:bg-on-primary focus-visible:before:bg-on-primary",
       secondary:
-        "bg-secondary text-on-primary hover:bg-secondary-hover active:bg-secondary-active",
+        "bg-secondary text-on-secondary hover:before:bg-on-secondary active:before:bg-on-secondary focus-visible:before:bg-on-secondary",
       tertiary:
-        "bg-tertiary text-on-tertiary hover:bg-tertiary-hover active:bg-tertiary-active",
+        "bg-tertiary text-on-tertiary hover:before:bg-on-tertiary active:before:bg-on-tertiary focus-visible:before:bg-on-tertiary",
       "primary-container":
-        "bg-primary-container text-on-primary-container hover:before:bg-on-primary-container hover:before:opacity-[0.08] active:before:bg-on-primary-container active:before:opacity-[0.1]",
+        "bg-primary-container text-on-primary-container hover:before:bg-on-primary-container active:before:bg-on-primary-container focus-visible:before:bg-on-primary-container",
       "secondary-container":
-        "bg-secondary-container text-on-secondary-container hover:bg-secondary-container-hover hover:before:opacity-[0.08] active:bg-secondary-container-active",
+        "bg-secondary-container text-on-secondary-container hover:before:bg-on-secondary-container active:before:bg-on-secondary-container focus-visible:before:bg-on-secondary-container",
       "tertiary-container":
-        "bg-tertiary-container text-on-tertiary-container hover:bg-tertiary-container-hover active:bg-tertiary-active",
+        "bg-tertiary-container text-on-tertiary-container hover:before:bg-on-tertiary-container active:before:bg-on-tertiary-container focus-visible:before:bg-on-tertiary-container",
     },
     size: {
       sm: "fab-sm",

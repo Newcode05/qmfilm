@@ -87,6 +87,10 @@ export default {
         on: {
           primary: "var(--color-on-primary)",
           "primary-container": "var(--color-on-primary-container)",
+
+          secondary: "var(--color-on-secondary)",
+          "secondary-container": "var(--color-secondary-container)",
+          
           surface: "var(--color-on-surface)",
           "surface-variant": "var(--color-on-surface-variant)",
         },
