@@ -61,23 +61,25 @@ const buttonStyle: {
     variant: "outlined",
     color: "primary",
     class:
-      "border border-primary text-primary hover:bg-primary/10 hover:border-primary/80 hover:shadow-sm active:bg-primary/20",
+      "border border-primary text-primary hover:before:bg-on-primary active:before:bg-on-primary",
   },
   {
     variant: "outlined",
     color: "secondary",
-    class: "border border-secondary text-secondary",
+    class: "border border-secondary text-secondary hover:before:bg-on-primary active:before:bg-on-primary",
   },
   //Elevated
   {
     variant: "elevated",
     color: "primary",
-    class: "bg-surface text-on-surface",
+    class:
+      "bg-surface text-on-surface shadow-elevation1 hover:before:bg-on-surface active:before:bg-on-surface",
   },
   {
     variant: "elevated",
     color: "secondary",
-    class: "bg-surface-dark text-on-surface-dark",
+    class:
+      "bg-surface-dark text-on-surface-dark shadow-elevation1 hover:before:bg-on-surface active:before:bg-on-surface",
   },
   //Icon
   {
@@ -114,10 +116,10 @@ export const button = tv({
       filled:
         "hover:before:bg-on-primary active:before:bg-on-primary focus-visible:before:bg-on-primary",
       tonal: "",
-      elevated: "active:shadow-sm active:bg-surface-active",
+      elevated: "",
       outlined: "",
-      text: "hover:bg-primary/10 active:bg-primary/20",
-      icon: "px-0! aspect-square flex justify-center items-center hover:bg-primary/90 active:bg-primary/80",
+      text: "hover:bg-on-primary active:bg-on-primary",
+      icon: "px-0! aspect-square flex justify-center items-center hover:before:bg-on-primary active:before:bg-on-primary",
     },
     color: {
       primary: "",

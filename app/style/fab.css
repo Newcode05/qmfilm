@@ -1,14 +1,14 @@
 .fab {
   @apply relative m-4 
   flex justify-center items-center 
-  shadow-elevation3 
+  shadow-elevation3 cursor-pointer 
   hover:shadow-elevation4 
   hover:before:opacity-[0.08]
   active:shadow-elevation3 
   active:before:opacity-[0.1]
-  cursor-pointer 
   focus-visible:ring-2 focus-visible:ring-offset-2
   focus-visible:before:opacity-[0.1]
+  disabled:opacity-[0.2] disabled:pointer-events-none
   before:content-[''] before:absolute 
   before:inset-0 before:opacity-0 
   before:pointer-events-none;

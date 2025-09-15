@@ -35,7 +35,7 @@ export const Default: Story = {
     variant: "default",
     icon: <CreateIcon style={{ color: "inherit", fontSize: "inherit" }} />,
     size: "sm",
-    color: "primary-container",
+    color: "tertiary-container",
     label: "Note",
   },
 };
