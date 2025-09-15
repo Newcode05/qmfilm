@@ -11,7 +11,7 @@ export const SearchView = forwardRef<HTMLDivElement, SearchViewProps>(
     return (
       <div
         ref={ref}
-        className={`absolute top-0 left-0 min-w-[360px] max-w-[720px] min-h-[240px] rounded-[40px] bg-surface-container-high ${className}`}
+        className={`bg-surface-container-high ${className}`}
       >
         <div className="h-[56px] flex flex-row gap-[16px] px-[16px] pt-[16px] text-on-surface items-start">
           <FontAwesomeIcon

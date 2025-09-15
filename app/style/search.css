@@ -10,4 +10,7 @@
     before:opacity-0 before:pointer-events-none
     hover:before:opacity-[0.08];
   }
+  .search-view {
+    @apply min-w-[360px] max-w-[720px] min-h-[240px] rounded-[40px];
+  }
 }
