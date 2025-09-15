@@ -131,7 +131,6 @@ export default {
         "4xl": "2.25rem",
         "5xl": "3rem",
         ...button.fontsize,
-        ...fab.fontSize,
         ...fabExtend.fontSize,
         ...searchBar.fontSize,
         "body-large": [

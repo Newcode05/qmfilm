@@ -8,10 +8,5 @@
     "fab-sm": "16px",
     "fab-md": "20px",
     "fab-lg": "28px"
-  },
-  "fontSize": {
-    "fab-label-sm": "24px",
-    "fab-label-md": "28px",
-    "fab-label-lg": "36px"
   }
 }
