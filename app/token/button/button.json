@@ -1,0 +1,42 @@
+{
+  "height": {
+    "btn-xs": "32px",
+    "btn-sm": "40px",
+    "btn-md": "48px",
+    "btn-lg": "56px",
+    "btn-xl": "64px"
+  },
+  "fontsize": {
+    "btn-label-xs": [
+      "12px",
+      { "lineHeight": "12px", "letterSpacing": "0.5px" }
+    ],
+    "btn-label-sm": [
+      "14px",
+      { "lineHeight": "16px", "letterSpacing": "0.5px" }
+    ],
+    "btn-label-md": [
+      "16px",
+      { "lineHeight": "16px", "letterSpacing": "0.5px" }
+    ],
+    "btn-label-lg": [
+      "20px",
+      { "lineHeight": "20px", "letterSpacing": "0.1px" }
+    ],
+    "btn-label-xl": ["24px", { "lineHeight": "24px", "letterSpacing": "0.1px" }]
+  },
+  "spacing": {
+    "btn-x-xs": "12px",
+    "btn-x-sm": "16px",
+    "btn-x-md": "24px",
+    "btn-x-lg": "48px",
+    "btn-x-xl": "64px"
+  },
+  "borderRadius": {
+    "btn-xs": "4px",
+    "btn-sm": "4px",
+    "btn-md": "6px",
+    "btn-lg": "6px",
+    "btn-xl": "6px"
+  }
+}

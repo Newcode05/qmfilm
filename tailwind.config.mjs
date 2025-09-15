@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import button from "./app/token/button/button.json";
 export default {
   darkMode: "class",
   content: [
@@ -123,27 +124,7 @@ export default {
         "3xl": "1.875rem",
         "4xl": "2.25rem",
         "5xl": "3rem",
-
-        "btn-label-xs": [
-          "12px",
-          { lineHeight: "12px", letterSpacing: "0.5px" },
-        ],
-        "btn-label-sm": [
-          "14px",
-          { lineHeight: "16px", letterSpacing: "0.5px" },
-        ],
-        "btn-label-md": [
-          "16px",
-          { lineHeight: "16px", letterSpacing: "0.5px" },
-        ],
-        "btn-label-lg": [
-          "20px",
-          { lineHeight: "20px", letterSpacing: "0.1px" },
-        ],
-        "btn-label-xl": [
-          "24px",
-          { lineHeight: "24px", letterSpacing: "0.1px" },
-        ],
+        ...button.fontsize,
 
         "fab-ex-label-sm": [
           "16px",
@@ -193,11 +174,7 @@ export default {
         ],
       },
       height: {
-        "btn-xs": "32px", // extral small
-        "btn-sm": "40px", // small
-        "btn-md": "48px", // default
-        "btn-lg": "56px", // large
-        "btn-xl": "64px", // extra large
+        ...button.height,
 
         "fab-ex-sm": "56px",
         "fab-ex-md": "80px",
@@ -224,11 +201,7 @@ export default {
         20: "5rem",
         24: "6rem",
 
-        "btn-x-xs": "12px",
-        "btn-x-sm": "16px",
-        "btn-x-md": "24px",
-        "btn-x-lg": "48px",
-        "btn-x-xl": "64px",
+        ...button.spacing,
 
         "fab-ex-x-sm": "16px",
         "fab-ex-x-md": "26px",
@@ -252,11 +225,7 @@ export default {
         "4xl": "3rem",
         full: "9999px",
 
-        "btn-xs": "4px",
-        "btn-sm": "4px",
-        "btn-md": "6px",
-        "btn-lg": "6px",
-        "btn-xl": "6px",
+        ...button.borderRadius,
 
         "fab-sm": "16px",
         "fab-md": "20px",
@@ -289,7 +258,6 @@ export default {
           "0px 5px 6px -3px rgba(0,0,0,0.2), 0px 9px 12px 1px rgba(0,0,0,0.14), 0px 3px 16px 2px rgba(0,0,0,0.12)",
         elevation10:
           "0px 6px 6px -3px rgba(0,0,0,0.2), 0px 10px 14px 1px rgba(0,0,0,0.14), 0px 4px 18px 3px rgba(0,0,0,0.12)",
-
       },
       transitionTimingFunction: {
         "expressive-fast-spatial": "var(--animation-expressive-fast-spatial)",
