@@ -3,6 +3,9 @@ import button from "./app/token/button/button.json";
 
 import fab from "./app/token/fab/fab.json";
 import fabExtend from "./app/token/fab/fabExtend.json";
+
+import searchBar from "./app/token/search/searchBar.json";
+
 export default {
   darkMode: "class",
   content: [
@@ -130,14 +133,7 @@ export default {
         ...button.fontsize,
         ...fab.fontSize,
         ...fabExtend.fontSize,
-        "search-bar": [
-          "16px",
-          {
-            fontWeight: "400",
-            lineHeight: "24px",
-            letterSpacing: "0.5px",
-          },
-        ],
+        ...searchBar.fontSize,
         "body-large": [
           "var(--typescale-body-large-size)",
           {
@@ -150,7 +146,7 @@ export default {
       height: {
         ...button.height,
         ...fabExtend.height,
-        "search-bar": "56px",
+        ...searchBar.height,
       },
       width: {
         ...fab.width,
@@ -170,8 +166,7 @@ export default {
         24: "6rem",
         ...button.spacing,
         ...fabExtend.spacing,
-        "search-bar-gap": "16px",
-        "search-bar-x": "16px",
+        ...searchBar.spacing,
       },
       borderRadius: {
         xs: "0.25rem",
@@ -185,7 +180,7 @@ export default {
         full: "9999px",
         ...button.borderRadius,
         ...fab.borderRadius,
-        "search-bar": "9999px",
+        ...searchBar.borderRadius,
       },
       boxShadow: {
         soft: "0 1.5px 8px 2px rgba(0, 0, 0, 0.08)",
