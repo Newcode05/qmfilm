@@ -12,11 +12,11 @@
 }
 
 .fab-ex-sm {
-  @apply h-fab-ex-sm gap-fab-ex-gap-sm px-fab-ex-x-sm rounded-fab-sm text-fab-ex-label-sm;
+  @apply h-fab-ex-sm gap-fab-ex-gap-sm px-fab-ex-x-sm rounded-fab-ex-sm text-fab-ex-label-sm [&>svg]:w-[20px] [&>svg]:h-[20px];
 }
 .fab-ex-md {
-  @apply h-fab-ex-md gap-fab-ex-gap-md px-fab-ex-x-md rounded-fab-md text-fab-ex-label-md;
+  @apply h-fab-ex-md gap-fab-ex-gap-md px-fab-ex-x-md rounded-fab-ex-md text-fab-ex-label-md [&>svg]:w-[28px] [&>svg]:h-[28px];
 }
 .fab-ex-lg {
-  @apply h-fab-ex-lg gap-fab-ex-gap-lg px-fab-ex-x-lg rounded-fab-lg text-fab-ex-label-lg;
+  @apply h-fab-ex-lg gap-fab-ex-gap-lg px-fab-ex-x-lg rounded-fab-ex-lg text-fab-ex-label-lg [&>svg]:w-[36px] [&>svg]:h-[36px];
 }

@@ -1,7 +1,9 @@
-import React from "react";
-import { ButtonProps } from "./button.type";
+"use client";
 
-import { button } from "./button.variant";
+import React from "react";
+import { motion } from "framer-motion";
+import { ButtonProps } from "./button.type";
+import { button } from "./button.style";
 
 export const Button: React.FC<ButtonProps> = ({
   className = "",
@@ -17,7 +19,7 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <button
+    <motion.button
       className={button({ variant, shape, color, size, className })}
       disabled={loading || disabled}
       aria-label={variant === "icon" ? label : undefined}
@@ -27,6 +29,6 @@ export const Button: React.FC<ButtonProps> = ({
       {startIcon}
       {variant !== "icon" ? label : null}
       {endIcon}
-    </button>
+    </motion.button>
   );
 };

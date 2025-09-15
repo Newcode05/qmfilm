@@ -4,6 +4,9 @@
 @import "./css/darkColor.css";
 
 @import "./style/component.css";
+@import "./style/button.css";
+@import "./style/fab.css";
+@import "./style/search.css";
 @config "../tailwind.config.mjs";
 
 :root {

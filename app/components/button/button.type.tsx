@@ -1,9 +1,10 @@
 import { ButtonHTMLAttributes, JSX } from "react";
 import { VariantProps } from "tailwind-variants";
-import { button } from "./button.variant";
+import { HTMLMotionProps } from "framer-motion";
+import { button } from "./button.style";
 
 type buttonVariant = VariantProps<typeof button>;
-export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
+export type ButtonProps = Omit<HTMLMotionProps<"button">, "drag"> &
   buttonVariant & {
     label?: string;
     loading?: boolean;

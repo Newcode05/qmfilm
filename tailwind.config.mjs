@@ -180,6 +180,7 @@ export default {
         full: "9999px",
         ...button.borderRadius,
         ...fab.borderRadius,
+        ...fabExtend.borderRadius,
         ...searchBar.borderRadius,
       },
       boxShadow: {

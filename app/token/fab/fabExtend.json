@@ -40,5 +40,10 @@
     "fab-ex-gap-sm": "8px",
     "fab-ex-gap-md": "12px",
     "fab-ex-gap-lg": "16px"
+  },
+  "borderRadius": {
+    "fab-ex-sm":"16px",
+    "fab-ex-md":"20px",
+    "fab-ex-lg":"28px"
   }
 }

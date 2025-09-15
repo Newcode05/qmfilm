@@ -9,7 +9,6 @@ type ButtonVariant =
   | "text"
   | "fab";
 type ButtonColor = "primary" | "secondary" | "success" | "warning" | "danger";
-type ButtonShape = "square" | "round";
 const buttonStyle: {
   variant: ButtonVariant;
   color: ButtonColor;
@@ -105,7 +104,7 @@ const buttonStyle: {
   },
 ];
 
-export const button = tv({
+export const button= tv({
   base: "btn",
   variants: {
     shape: {
@@ -139,26 +138,6 @@ export const button = tv({
   },
   compoundVariants: [
     ...buttonStyle,
-    /*{
-      variant: "filled",
-      color: "primary",
-      class: "bg-[var(--color-primary)] text-[var(--color-on-primary)]",
-    },
-    {
-      variant: "tonal",
-      color: "secondary",
-      class: "bg-[#ddd6fe] text-[#4c1d95]",
-    },
-    {
-      variant: "outlined",
-      color: "primary",
-      class: "border border-[var(--color-primary)] text-[var(--color-primary)]",
-    },
-    {
-      variant: "elevated",
-      color: "primary",
-      class: "shadow-soft bg-[var(--background)] text-[var(--color-primary)]",
-    },*/
     {
       variant: "icon",
       shape: "round",

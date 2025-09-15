@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { Fab } from "./fab";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPen } from "@fortawesome/free-solid-svg-icons";
+import CreateIcon from "@mui/icons-material/Create";
 
 export default {
   title: "Components/FAB/FAB",
@@ -34,14 +33,7 @@ type Story = StoryObj<typeof Fab>;
 export const Default: Story = {
   args: {
     variant: "default",
-
-    icon: (
-      <FontAwesomeIcon
-        icon={faPen}
-        style={{ color: "inherit", fontSize: "inherit" }}
-      />
-    ),
-
+    icon: <CreateIcon style={{ color: "inherit", fontSize: "inherit" }} />,
     size: "sm",
     color: "primary-container",
     label: "Note",
@@ -50,12 +42,7 @@ export const Default: Story = {
 export const Extended: Story = {
   args: {
     variant: "extended",
-    icon: (
-      <FontAwesomeIcon
-        icon={faPen}
-        style={{ color: "inherit", fontSize: "24px" }}
-      />
-    ),
+    icon: <CreateIcon style={{ color: "inherit" }} />,
     size: "sm",
     color: "primary-container",
     label: "Compose",

@@ -1,7 +1,7 @@
 import React from "react";
 import { VariantProps } from "tailwind-variants";
-import { fab } from "./fab.variant";
-import { ripple } from "./fab.variant";
+import { fab } from "./fab.style";
+import { ripple } from "./fab.style";
 
 type FabVariant = VariantProps<typeof fab>;
 type RippleVariant = VariantProps<typeof ripple>;

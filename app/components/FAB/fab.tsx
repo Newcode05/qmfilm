@@ -3,8 +3,8 @@ import { forwardRef } from "react";
 
 import { FabProps } from "./fab.type";
 
-import { fab } from "./fab.variant";
-import { ripple } from "./fab.variant";
+import { fab } from "./fab.style";
+import { ripple } from "./fab.style";
 
 import { useRipple } from "@/app/hooks/ripple/useRipple";
 import { megerRef } from "@/app/utils/mergerRef";
