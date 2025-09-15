@@ -1,5 +1,13 @@
 @layer components {
   .search-bar {
-    @apply relative min-w-[360px] max-w-[720px] h-search-bar px-search-bar-x rounded-[28px] flex flex-row justify-start items-center gap-search-bar-gap transition-all;
+    @apply relative min-w-[360px] max-w-[720px] 
+    h-search-bar px-search-bar-x rounded-[28px] 
+    flex flex-row justify-start items-center 
+    gap-search-bar-gap transition-all
+    overflow-hidden
+    before:content-['']
+    before:absolute before:inset-0
+    before:opacity-0 before:pointer-events-none
+    hover:before:opacity-[0.08];
   }
 }

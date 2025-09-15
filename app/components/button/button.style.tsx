@@ -66,7 +66,8 @@ const buttonStyle: {
   {
     variant: "outlined",
     color: "secondary",
-    class: "border border-secondary text-secondary hover:before:bg-on-primary active:before:bg-on-primary",
+    class:
+      "border border-secondary text-secondary hover:before:bg-on-primary active:before:bg-on-primary",
   },
   //Elevated
   {
@@ -118,7 +119,7 @@ export const button = tv({
       tonal: "",
       elevated: "",
       outlined: "",
-      text: "hover:bg-on-primary active:bg-on-primary",
+      text: "text-on-primary hover:bg-on-primary active:bg-on-primary",
       icon: "px-0! aspect-square flex justify-center items-center hover:before:bg-on-primary active:before:bg-on-primary",
     },
     color: {

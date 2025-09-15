@@ -1,7 +1,8 @@
 import React, { forwardRef } from "react";
+import { motion } from "framer-motion";
 
 import { SearchBarProps } from "./SearchBar.type";
-import { searchBar } from "./SearchBar.variant";
+import { searchBarStyle } from "./SearchBar.style";
 import { useRipple } from "@/app/hooks/ripple/useRipple";
 import { megerRef } from "@/app/utils/mergerRef";
 
@@ -20,13 +21,13 @@ export const SearchBar = forwardRef<HTMLDivElement, SearchBarProps>(
       ...prop
     } = props;
     return (
-      <div
+      <motion.div
         ref={megerRef(containerRef, ref)}
         role="combobox"
         aria-haspopup="listbox"
         aria-owns="search-suggestions"
         aria-expanded="false"
-        className={`${searchBar({ color })} ${className}`}
+        className={searchBarStyle({ color, className })}
         onClick={(e) => {
           createRipple(e.nativeEvent), onClick(e);
         }}
@@ -39,10 +40,10 @@ export const SearchBar = forwardRef<HTMLDivElement, SearchBarProps>(
           aria-autocomplete="list"
           aria-controls="search-suggestions"
           aria-activedescendant="item-1"
-          className="outline-none text-body-large text-on-surface placeholder-on-surface-variant focus:none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-secondary"
+          className="outline-none text-body-large text-on-surface placeholder-on-surface-variant focus:outline-none"
         />
         {trailingIcon}
-      </div>
+      </motion.div>
     );
   }
 );

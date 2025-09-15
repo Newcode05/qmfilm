@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { SearchBar } from "./SearchBar";
+import SearchIcon from "@mui/icons-material/Search";
 
 export default {
   title: "Components/Search/SearchBar",
@@ -23,11 +22,6 @@ type Story = StoryObj<typeof SearchBar>;
 
 export const Default: Story = {
   args: {
-    leadingIcon: (
-      <FontAwesomeIcon
-        icon={faMagnifyingGlass}
-        style={{ color: "inherit", fontSize: "24px" }}
-      />
-    ),
+    leadingIcon: <SearchIcon style={{ color: "inherit", fontSize: "24px" }} />,
   },
 };
