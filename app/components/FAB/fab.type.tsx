@@ -1,11 +1,12 @@
 import React from "react";
 import { VariantProps } from "tailwind-variants";
-import { fab } from "./fab.style";
+import { HTMLMotionProps } from "framer-motion";
+import { fabStyle } from "./fab.style";
 import { ripple } from "./fab.style";
 
-type FabVariant = VariantProps<typeof fab>;
+type FabVariant = VariantProps<typeof fabStyle>;
 type RippleVariant = VariantProps<typeof ripple>;
-export type FabProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+export type FabProps = Omit<HTMLMotionProps<"button">, "darg"> &
   RippleVariant &
   FabVariant & {
     icon: React.ReactNode;

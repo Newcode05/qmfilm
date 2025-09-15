@@ -1,9 +1,7 @@
-import React from "react";
-import { forwardRef } from "react";
-
+import React, { forwardRef } from "react";
+import { motion } from "framer-motion";
 import { FabProps } from "./fab.type";
-
-import { fab } from "./fab.style";
+import { fabStyle } from "./fab.style";
 import { ripple } from "./fab.style";
 
 import { useRipple } from "@/app/hooks/ripple/useRipple";
@@ -27,17 +25,17 @@ export const Fab = forwardRef<HTMLButtonElement, FabProps>(
       ripple({ color })
     );
     return (
-      <button
+      <motion.button
         aria-label={label}
         ref={megerRef(containerRef, ref)}
-        className={fab({ variant, size, color, className })}
+        className={fabStyle({ variant, size, color, className })}
         onClick={(e) => createRipple(e.nativeEvent)}
         style={{ position: "relative", overflow: "hidden" }}
         {...props}
       >
         {icon}
         {variant === "extended" ? label : ""}
-      </button>
+      </motion.button>
     );
   }
 );

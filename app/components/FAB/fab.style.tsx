@@ -1,6 +1,6 @@
 import { tv } from "tailwind-variants";
 
-export const fab = tv({
+export const fabStyle = tv({
   base: "fab",
   variants: {
     variant: {
