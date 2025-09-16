@@ -97,6 +97,7 @@ export default {
         },
         outline: {
           DEFAULT: "var(--color-outline)",
+          variant: "var(--color-outline-variant)",
         },
       },
       textColor: {
@@ -110,8 +111,10 @@ export default {
 
         "on-tertiary": "var(--color-on-tertiary)",
         "on-tertiary-container": "var(--color-on-tertiary-container)",
+        
         "on-surface": "var(--color-on-surface)",
         "on-surface-dark": "var(--color-on-surface-dark)",
+        "on-surface-variant": "var(--color-on-surface-variant)",
 
         "on-darger": "var(--color-on-danger)",
         "on-warning": "var(--color-on-warning)",

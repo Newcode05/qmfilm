@@ -30,8 +30,21 @@ export const Default: Story = {
   args: {
     shape: "square",
     width: "default",
-    size: "lg",
+    size: "sm",
     color: "filled",
-    icon: <SettingsIcon />,
+  },
+  render: ({ size = "md", ...args }) => {
+    const iconSizes = { xs: "20px", sm: "24px", md: "24px", lg: "32px" };
+    return (
+      <ButtonIcon
+        size={size}
+        icon={
+          <SettingsIcon
+            style={{ width: iconSizes[size], height: iconSizes[size] }}
+          />
+        }
+        {...args}
+      />
+    );
   },
 };

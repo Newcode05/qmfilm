@@ -4,7 +4,7 @@ export const buttonIconStyle = tv({
   base: "btn-i",
   variants: {
     shape: {
-      round: "",
+      round: "rounded-full",
       square: "",
     },
     width: {
@@ -20,21 +20,21 @@ export const buttonIconStyle = tv({
     },
     color: {
       filled: "bg-primary text-on-primary",
-      tonal: "",
-      outlined: "",
-      standard: "",
+      tonal: "bg-secondary-container text-on-secondary-container",
+      outlined: "outline-outline-variant text-on-surface-variant",
+      standard: "text-on-surface-variant",
     },
   },
   compoundVariants: [
     {
       width: "narrow",
       size: "xs",
-      class: "btn-i-nr-xs",
+      class: "btn-i-nr-xs after:w-[48px] after:h-[48px]",
     },
     {
       width: "narrow",
       size: "sm",
-      class: "btn-i-nr-sm",
+      class: "btn-i-nr-sm after:w-[48px] after:h-[48px]",
     },
     {
       width: "narrow",
@@ -50,12 +50,12 @@ export const buttonIconStyle = tv({
     {
       width: "default",
       size: "xs",
-      class: "btn-i-df-xs",
+      class: "btn-i-df-xs after:w-[48px] after:h-[48px]",
     },
     {
       width: "default",
       size: "sm",
-      class: "btn-i-df-sm",
+      class: "btn-i-df-sm after:w-[48px] after:h-[48px]",
     },
     {
       width: "default",
@@ -71,12 +71,12 @@ export const buttonIconStyle = tv({
     {
       width: "wide",
       size: "xs",
-      class: "btn-i-wd-xs",
+      class: "btn-i-wd-xs after:w-[48px] after:h-[48px]",
     },
     {
       width: "wide",
       size: "sm",
-      class: "btn-i-wd-sm",
+      class: "btn-i-wd-sm after:w-[48px] after:h-[48px]",
     },
     {
       width: "wide",
@@ -87,6 +87,27 @@ export const buttonIconStyle = tv({
       width: "wide",
       size: "lg",
       class: "btn-i-wd-lg",
+    },
+
+    {
+      color: "outlined",
+      size: "xs",
+      class: "outline-1",
+    },
+    {
+      color: "outlined",
+      size: "sm",
+      class: "outline-1",
+    },
+    {
+      color: "outlined",
+      size: "md",
+      class: "outline-1",
+    },
+    {
+      color: "outlined",
+      size: "lg",
+      class: "outline-2",
     },
   ],
 });

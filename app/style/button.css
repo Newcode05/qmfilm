@@ -59,44 +59,61 @@
   }
   /*Button icon*/
   .btn-i {
-    @apply flex justify-center items-center;
+    @apply relative flex justify-center items-center
+    after:content-['']
+    after:pointer-events-none
+    after:absolute
+    after:top-1/2 
+    after:left-1/2 
+    after:-translate-x-1/2 
+    after:-translate-y-1/2 
+    after:bg-transparent
+    after:border
+    after:z-[-1]
+    z-[10]
+    before:content-['']
+    before:pointer-events-none
+    before:absolute
+    before:inset-0
+    hover:before:bg-blue-500
+    active:bg-blue-500;
   }
   .btn-i-nr-xs {
-    @apply h-btn-i-xs px-btn-i-nr-xs-x rounded-md [&>svg]:w-[20px] [&>svg]:h-[20px];
+    @apply h-btn-i-xs px-btn-i-nr-xs-x rounded-md;
   }
   .btn-i-nr-sm {
-    @apply h-btn-i-sm px-btn-i-nr-sm-x rounded-md [&>svg]:w-[24px] [&>svg]:h-[24px];
+    @apply h-btn-i-sm px-btn-i-nr-sm-x rounded-md;
   }
   .btn-i-nr-md {
-    @apply h-btn-i-md px-btn-i-nr-md-x rounded-lg [&>svg]:w-[24px] [&>svg]:h-[24px];
+    @apply h-btn-i-md px-btn-i-nr-md-x rounded-lg;
   }
   .btn-i-nr-lg {
-    @apply h-btn-i-lg px-btn-i-nr-lg-x rounded-xl [&>svg]:w-[32px] [&>svg]:h-[32px];
+    @apply h-btn-i-lg px-btn-i-nr-lg-x rounded-xl;
   }
 
   .btn-i-df-xs {
-    @apply h-btn-i-xs px-btn-i-df-xs-x rounded-md [&>svg]:w-[20px] [&>svg]:h-[20px];
+    @apply h-btn-i-xs px-btn-i-df-xs-x rounded-md;
   }
   .btn-i-df-sm {
-    @apply h-btn-i-sm px-btn-i-df-sm-x rounded-md [&>svg]:w-[24px] [&>svg]:h-[24px];
+    @apply h-btn-i-sm px-btn-i-df-sm-x rounded-md;
   }
   .btn-i-df-md {
-    @apply h-btn-i-md px-btn-i-df-md-x rounded-lg [&>svg]:w-[24px] [&>svg]:h-[24px];
+    @apply h-btn-i-md px-btn-i-df-md-x rounded-lg;
   }
   .btn-i-df-lg {
-    @apply h-btn-i-lg px-btn-i-df-lg-x rounded-xl [&>svg]:w-[32px] [&>svg]:h-[32px];
+    @apply h-btn-i-lg px-btn-i-df-lg-x rounded-xl;
   }
 
   .btn-i-wd-xs {
-    @apply h-btn-i-xs px-btn-i-wd-xs-x rounded-md [&>svg]:w-[20px] [&>svg]:h-[20px];
+    @apply h-btn-i-xs px-btn-i-wd-xs-x rounded-md;
   }
   .btn-i-wd-sm {
-    @apply h-btn-i-sm px-btn-i-wd-sm-x rounded-md [&>svg]:w-[24px] [&>svg]:h-[24px];
+    @apply h-btn-i-sm px-btn-i-wd-sm-x rounded-md;
   }
   .btn-i-wd-md {
-    @apply h-btn-i-md px-btn-i-wd-md-x rounded-lg [&>svg]:w-[24px] [&>svg]:h-[24px];
+    @apply h-btn-i-md px-btn-i-wd-md-x rounded-lg;
   }
   .btn-i-wd-lg {
-    @apply h-btn-i-lg px-btn-i-wd-lg-x rounded-xl [&>svg]:w-[32px] [&>svg]:h-[32px];
+    @apply h-btn-i-lg px-btn-i-wd-lg-x rounded-xl;
   }
 }
