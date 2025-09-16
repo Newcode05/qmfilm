@@ -28,4 +28,33 @@
   .btn-xl {
     @apply h-btn-xl px-btn-x-xl text-btn-label-xl;
   }
+
+  .btn-gr {
+    @apply relative flex flex-col;
+  }
+  .btn-gr-st-xs {
+    @apply h-btn-gr-st-xs gap-btn-gr-st-xs-gap;
+  }
+  .btn-gr-st-sm {
+    @apply h-btn-gr-st-sm gap-btn-gr-st-sm-gap;
+  }
+  .btn-gr-st-md {
+    @apply h-btn-gr-st-md gap-btn-gr-st-md-gap;
+  }
+  .btn-gr-st-md {
+    @apply h-btn-gr-st-lg gap-btn-gr-st-lg-gap;
+  }
+
+  .btn-gr-cn-xs {
+    @apply h-btn-gr-cn-xs gap-btn-gr-cn-xs-gap;
+  }
+  .btn-gr-cn-sm {
+    @apply h-btn-gr-cn-sm gap-btn-gr-cn-sm-gap;
+  }
+  .btn-gr-cn-md {
+    @apply h-btn-gr-cn-md gap-btn-gr-cn-md-gap;
+  }
+  .btn-gr-cn-lg {
+    @apply h-btn-gr-cn-lg gap-btn-gr-cn-lg-gap;
+  }
 }

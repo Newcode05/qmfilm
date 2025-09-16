@@ -1,0 +1,30 @@
+{
+  "standard": {
+    "height": {
+      "btn-gr-st-xs": "32px",
+      "btn-gr-st-sm": "40px",
+      "btn-gr-st-md": "56px",
+      "btn-gr-st-lg": "96px"
+    },
+    "spacing": {
+      "btn-gr-st-xs-gap": "18px",
+      "btn-gr-st-sm-gap": "12px",
+      "btn-gr-st-md-gap": "8px",
+      "btn-gr-st-lg-gap": "8px"
+    }
+  },
+  "connected": {
+    "height": {
+      "btn-gr-cn-xs": "32px",
+      "btn-gr-cn-sm": "40px",
+      "btn-gr-cn-md": "56px",
+      "btn-gr-cn-lg": "96px"
+    },
+    "spacing": {
+      "btn-gr-cn-xs-gap": "2px",
+      "btn-gr-cn-sm-gap": "2px",
+      "btn-gr-cn-md-gap": "2px",
+      "btn-gr-cn-lg-gap": "2px"
+    }
+  }
+}
