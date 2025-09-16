@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import button from "./app/token/button/button.json";
 import buttonGroup from "./app/token/button/buttonGroup.json";
-
+import buttonIcon from "./app/token/button/buttonIcon.json";
 import fab from "./app/token/fab/fab.json";
 import fabExtend from "./app/token/fab/fabExtend.json";
 
@@ -151,6 +151,7 @@ export default {
         ...button.height,
         ...buttonGroup.standard.height,
         ...buttonGroup.connected.height,
+        ...buttonIcon.height,
         ...fabExtend.height,
         ...searchBar.height,
       },
@@ -173,6 +174,9 @@ export default {
         ...button.spacing,
         ...buttonGroup.standard.spacing,
         ...buttonGroup.connected.spacing,
+        ...buttonIcon.narrow.spacing,
+        ...buttonIcon.default.spacing,
+        ...buttonIcon.wide.spacing,
         ...fabExtend.spacing,
         ...searchBar.spacing,
       },
@@ -181,7 +185,7 @@ export default {
         sm: "0.5rem",
         md: "0.75rem",
         lg: "1rem",
-        xl: "1.25rem",
+        xl: "1.75rem",
         "2xl": "1.75rem",
         "3xl": "2rem",
         "4xl": "3rem",

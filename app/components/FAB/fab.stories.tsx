@@ -30,21 +30,49 @@ export default {
 } as Meta<typeof Fab>;
 
 type Story = StoryObj<typeof Fab>;
+
 export const Default: Story = {
   args: {
     variant: "default",
-    icon: <CreateIcon style={{ color: "inherit", fontSize: "inherit" }} />,
     size: "sm",
     color: "tertiary-container",
     label: "Note",
+  },
+  render: ({ size = "sm", ...args }) => {
+    const iconSizes = { sm: "24px", md: "28px", lg: "36px" };
+    return (
+      <Fab
+        size={size}
+        {...args}
+        icon={
+          <CreateIcon
+            style={{ width: iconSizes[size], height: iconSizes[size] }}
+          />
+        }
+      />
+    );
   },
 };
 export const Extended: Story = {
   args: {
     variant: "extended",
-    icon: <CreateIcon style={{ color: "inherit" }} />,
+    icon: <CreateIcon style={{ width: "", height: "" }} />,
     size: "sm",
     color: "primary-container",
     label: "Compose",
+  },
+  render: ({ size = "sm", ...args }) => {
+    const iconSizes = { sm: "24px", md: "28px", lg: "36px" };
+    return (
+      <Fab
+        size={size}
+        {...args}
+        icon={
+          <CreateIcon
+            style={{ width: iconSizes[size], height: iconSizes[size] }}
+          />
+        }
+      />
+    );
   },
 };

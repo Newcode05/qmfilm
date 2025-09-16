@@ -28,7 +28,7 @@
   .btn-xl {
     @apply h-btn-xl px-btn-x-xl text-btn-label-xl;
   }
-
+  /*Button group*/
   .btn-gr {
     @apply relative flex flex-col;
   }
@@ -56,5 +56,47 @@
   }
   .btn-gr-cn-lg {
     @apply h-btn-gr-cn-lg gap-btn-gr-cn-lg-gap;
+  }
+  /*Button icon*/
+  .btn-i {
+    @apply flex justify-center items-center;
+  }
+  .btn-i-nr-xs {
+    @apply h-btn-i-xs px-btn-i-nr-xs-x rounded-md [&>svg]:w-[20px] [&>svg]:h-[20px];
+  }
+  .btn-i-nr-sm {
+    @apply h-btn-i-sm px-btn-i-nr-sm-x rounded-md [&>svg]:w-[24px] [&>svg]:h-[24px];
+  }
+  .btn-i-nr-md {
+    @apply h-btn-i-md px-btn-i-nr-md-x rounded-lg [&>svg]:w-[24px] [&>svg]:h-[24px];
+  }
+  .btn-i-nr-lg {
+    @apply h-btn-i-lg px-btn-i-nr-lg-x rounded-xl [&>svg]:w-[32px] [&>svg]:h-[32px];
+  }
+
+  .btn-i-df-xs {
+    @apply h-btn-i-xs px-btn-i-df-xs-x rounded-md [&>svg]:w-[20px] [&>svg]:h-[20px];
+  }
+  .btn-i-df-sm {
+    @apply h-btn-i-sm px-btn-i-df-sm-x rounded-md [&>svg]:w-[24px] [&>svg]:h-[24px];
+  }
+  .btn-i-df-md {
+    @apply h-btn-i-md px-btn-i-df-md-x rounded-lg [&>svg]:w-[24px] [&>svg]:h-[24px];
+  }
+  .btn-i-df-lg {
+    @apply h-btn-i-lg px-btn-i-df-lg-x rounded-xl [&>svg]:w-[32px] [&>svg]:h-[32px];
+  }
+
+  .btn-i-wd-xs {
+    @apply h-btn-i-xs px-btn-i-wd-xs-x rounded-md [&>svg]:w-[20px] [&>svg]:h-[20px];
+  }
+  .btn-i-wd-sm {
+    @apply h-btn-i-sm px-btn-i-wd-sm-x rounded-md [&>svg]:w-[24px] [&>svg]:h-[24px];
+  }
+  .btn-i-wd-md {
+    @apply h-btn-i-md px-btn-i-wd-md-x rounded-lg [&>svg]:w-[24px] [&>svg]:h-[24px];
+  }
+  .btn-i-wd-lg {
+    @apply h-btn-i-lg px-btn-i-wd-lg-x rounded-xl [&>svg]:w-[32px] [&>svg]:h-[32px];
   }
 }

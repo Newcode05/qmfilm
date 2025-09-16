@@ -1,0 +1,32 @@
+{
+  "height": {
+    "btn-i-xs": "32px",
+    "btn-i-sm": "40px",
+    "btn-i-md": "56px",
+    "btn-i-lg": "96px"
+  },
+  "narrow": {
+    "spacing": {
+      "btn-i-nr-xs-x": "4px",
+      "btn-i-nr-sm-x": "4px",
+      "btn-i-nr-md-x": "12px",
+      "btn-i-nr-lg-x": "16px"
+    }
+  },
+  "default": {
+    "spacing": {
+      "btn-i-df-xs-x": "6px",
+      "btn-i-df-sm-x": "8px",
+      "btn-i-df-md-x": "16px",
+      "btn-i-df-lg-x": "32px"
+    }
+  },
+  "wide": {
+    "spacing": {
+      "btn-i-wd-xs-x": "10px",
+      "btn-i-wd-sm-x": "14px",
+      "btn-i-wd-md-x": "24px",
+      "btn-i-wd-lg-x": "48px"
+    }
+  }
+}
