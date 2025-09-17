@@ -61,22 +61,21 @@
   .btn-i {
     @apply relative flex justify-center items-center
     after:content-['']
-    after:pointer-events-none
     after:absolute
     after:top-1/2 
     after:left-1/2 
     after:-translate-x-1/2 
     after:-translate-y-1/2 
     after:bg-transparent
-    after:border
-    after:z-[-1]
-    z-[10]
     before:content-['']
     before:pointer-events-none
     before:absolute
     before:inset-0
-    hover:before:bg-blue-500
-    active:bg-blue-500;
+    hover:before:opacity-[0.08]
+    active:before:opacity-[0.1]
+    disabled:opacity-[0.1]
+    disabled:pointer-events-none
+    hover:before:bg-black;
   }
   .btn-i-nr-xs {
     @apply h-btn-i-xs px-btn-i-nr-xs-x rounded-md;

@@ -4,7 +4,7 @@ export const buttonIconStyle = tv({
   base: "btn-i",
   variants: {
     shape: {
-      round: "rounded-full",
+      round: "rounded-full after:rounded-full",
       square: "",
     },
     width: {
@@ -19,9 +19,12 @@ export const buttonIconStyle = tv({
       lg: "",
     },
     color: {
-      filled: "bg-primary text-on-primary",
-      tonal: "bg-secondary-container text-on-secondary-container",
-      outlined: "outline-outline-variant text-on-surface-variant",
+      filled:
+        "bg-primary text-on-primary hover:before:bg-on-primary active:before:bg-on-primary disabled:bg-on-surface",
+      tonal:
+        "bg-secondary-container text-on-secondary-container hover:before:bg-on-secondary-container active:before:bg-on-secondary-container disabled:bg-on-surface",
+      outlined:
+        "outline-outline-variant text-on-surface-variant hover:before:bg-on-surface-variant active:before:bg-on-surface-variant",
       standard: "text-on-surface-variant",
     },
   },
@@ -108,6 +111,26 @@ export const buttonIconStyle = tv({
       color: "outlined",
       size: "lg",
       class: "outline-2",
+    },
+    {
+      shape: "square",
+      size: "xs",
+      class: "before:rounded-md",
+    },
+    {
+      shape: "square",
+      size: "sm",
+      class: "before:rounded-md",
+    },
+    {
+      shape: "square",
+      size: "md",
+      class: "before:rounded-lg",
+    },
+    {
+      shape: "square",
+      size: "lg",
+      class: "before:rounded-xl",
     },
   ],
 });
