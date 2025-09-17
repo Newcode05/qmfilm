@@ -2,9 +2,9 @@
   "height": {
     "btn-xs": "32px",
     "btn-sm": "40px",
-    "btn-md": "48px",
-    "btn-lg": "56px",
-    "btn-xl": "64px"
+    "btn-md": "56px",
+    "btn-lg": "96px",
+    "btn-xl": "136px"
   },
   "fontsize": {
     "btn-label-xs": [
@@ -33,10 +33,10 @@
     "btn-x-xl": "64px"
   },
   "borderRadius": {
-    "btn-xs": "4px",
-    "btn-sm": "4px",
-    "btn-md": "6px",
-    "btn-lg": "6px",
-    "btn-xl": "6px"
+    "btn-xs": "12px",
+    "btn-sm": "12px",
+    "btn-md": "16px",
+    "btn-lg": "28px",
+    "btn-xl": "28px"
   }
 }

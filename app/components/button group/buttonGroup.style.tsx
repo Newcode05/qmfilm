@@ -1,6 +1,6 @@
 import { tv } from "tailwind-variants";
 export const buttonGroupStyle = tv({
-  base: "",
+  base: "btn-gr",
   variants: {
     type: {
       standard: "",

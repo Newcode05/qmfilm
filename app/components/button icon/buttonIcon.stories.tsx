@@ -28,7 +28,7 @@ export default {
 type Story = StoryObj<typeof ButtonIcon>;
 export const Default: Story = {
   args: {
-    shape: "square",
+    shape: "round",
     width: "default",
     size: "sm",
     color: "filled",

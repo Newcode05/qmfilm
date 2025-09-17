@@ -30,7 +30,7 @@
   }
   /*Button group*/
   .btn-gr {
-    @apply relative flex flex-col;
+    @apply relative flex flex-row items-center;
   }
   .btn-gr-st-xs {
     @apply h-btn-gr-st-xs gap-btn-gr-st-xs-gap;
