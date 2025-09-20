@@ -84,9 +84,9 @@
     before:inset-0
     hover:before:opacity-[0.08]
     active:before:opacity-[0.1]
-    active:translate-y-[1px] active:scale-[0.98]
-    disabled:opacity-[0.1]
-    disabled:pointer-events-none;
+    focus-visible:ring-2 focus-visible:ring-offset-2
+    focus-visible:before:opacity-[0.1]
+    disabled:opacity-[0.1] disabled:pointer-events-none;
   }
   .btn-i-nr-xs {
     @apply h-btn-i-xs px-btn-i-nr-xs-x rounded-md;
@@ -102,16 +102,16 @@
   }
 
   .btn-i-df-xs {
-    @apply h-btn-i-xs px-btn-i-df-xs-x rounded-md;
+    @apply h-btn-i-xs px-btn-i-df-xs-x;
   }
   .btn-i-df-sm {
-    @apply h-btn-i-sm px-btn-i-df-sm-x rounded-md;
+    @apply h-btn-i-sm px-btn-i-df-sm-x;
   }
   .btn-i-df-md {
-    @apply h-btn-i-md px-btn-i-df-md-x rounded-lg;
+    @apply h-btn-i-md px-btn-i-df-md-x;
   }
   .btn-i-df-lg {
-    @apply h-btn-i-lg px-btn-i-df-lg-x rounded-xl;
+    @apply h-btn-i-lg px-btn-i-df-lg-x;
   }
 
   .btn-i-wd-xs {

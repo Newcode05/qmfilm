@@ -28,10 +28,10 @@ export default {
 type Story = StoryObj<typeof ButtonIcon>;
 export const Default: Story = {
   args: {
-    shape: "round",
+    shape: "square",
     width: "default",
     size: "sm",
-    color: "filled",
+    color: "outlined",
   },
   render: ({ size = "md", ...args }) => {
     const iconSizes = { xs: "20px", sm: "24px", md: "24px", lg: "32px" };

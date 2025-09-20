@@ -4,5 +4,5 @@ import { HTMLAttributes } from "react";
 type buttonGroupVariant = VariantProps<typeof buttonGroupStyle>;
 export type buttonGroupProps = HTMLAttributes<HTMLDivElement> &
   buttonGroupVariant & {
-    childern?: React.ReactNode;
+    children?: React.ReactNode;
   };

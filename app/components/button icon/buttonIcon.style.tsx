@@ -1,10 +1,10 @@
 import { tv } from "tailwind-variants";
-
+import { Variants } from "framer-motion";
 export const buttonIconStyle = tv({
   base: "btn-i",
   variants: {
     shape: {
-      round: "rounded-full after:rounded-full",
+      round: "",
       square: "",
     },
     width: {
@@ -18,14 +18,19 @@ export const buttonIconStyle = tv({
       md: "",
       lg: "",
     },
+    selected: {
+      true: "",
+      false: "",
+    },
     color: {
       filled:
         "bg-primary text-on-primary hover:before:bg-on-primary active:before:bg-on-primary disabled:bg-on-surface",
       tonal:
         "bg-secondary-container text-on-secondary-container hover:before:bg-on-secondary-container active:before:bg-on-secondary-container disabled:bg-on-surface",
       outlined:
-        "outline-outline-variant text-on-surface-variant hover:before:bg-on-surface-variant active:before:bg-on-surface-variant",
-      standard: "text-on-surface-variant",
+        "outline-outline-variant text-on-surface-variant hover:before:bg-on-surface-variant active:before:bg-on-surface-variant disabled:outline-outline-variant",
+      standard:
+        "text-on-surface-variant hover:before:bg-on-surface-variant active:before:bg-on-surface-variant",
     },
   },
   compoundVariants: [
@@ -132,5 +137,70 @@ export const buttonIconStyle = tv({
       size: "lg",
       class: "before:rounded-xl",
     },
+
+    {
+      shape: "square",
+      selected: true,
+      class: "before:rounded-full",
+    },
+
+    {
+      shape: "round",
+      size: "xs",
+      selected: true,
+      class: "before:rounded-md",
+    },
+    {
+      shape: "round",
+      size: "sm",
+      selected: true,
+      class: "before:rounded-md",
+    },
+    {
+      shape: "round",
+      size: "md",
+      selected: true,
+      class: "before:rounded-lg",
+    },
+    {
+      shape: "round",
+      size: "lg",
+      selected: true,
+      class: "before:rounded-xl",
+    },
   ],
 });
+
+export const buttonMotionVariants: Variants = {
+  default: (custom: [string, string]) => {
+    const [size, shape] = custom;
+    return {
+      scale: 1,
+      borderRadius:
+        shape === "round"
+          ? "50%"
+          : size === "xs"
+          ? "12px"
+          : size === "sm"
+          ? "12px"
+          : size === "md"
+          ? "16px"
+          : "28px",
+    };
+  },
+  selected: (custom: [string, string]) => {
+    const [size, shape] = custom;
+    return {
+      borderRadius:
+        shape !== "round"
+          ? "50%"
+          : size === "xs"
+          ? "12px"
+          : size === "sm"
+          ? "12px"
+          : size === "md"
+          ? "16px"
+          : "28px",
+    };
+  },
+};

@@ -3,7 +3,7 @@ import { buttonGroupProps } from "./buttonGroup.type";
 import { buttonGroupStyle } from "./buttonGroup.style";
 
 export const ButtonGroup: React.FC<buttonGroupProps> = ({
-  childern,
+  children,
   className = "",
   type = "standard",
   size = "sm",
@@ -11,7 +11,7 @@ export const ButtonGroup: React.FC<buttonGroupProps> = ({
 }) => {
   return (
     <div className={buttonGroupStyle({ type, size, className })} {...props}>
-      {childern}
+      {children}
     </div>
   );
 };
