@@ -28,6 +28,8 @@ export const buttonIconStyle = tv({
         "bg-secondary-container text-on-secondary-container hover:before:bg-on-secondary-container active:before:bg-on-secondary-container disabled:bg-on-surface",
       outlined:
         "outline-outline-variant text-on-surface-variant hover:before:bg-on-surface-variant active:before:bg-on-surface-variant disabled:outline-outline-variant",
+      elevated:
+        "bg-surface text-on-surface shadow-elevation1 hover:before:bg-on-surface active:before:bg-on-surface",
       standard:
         "text-on-surface-variant hover:before:bg-on-surface-variant active:before:bg-on-surface-variant",
     },

@@ -21,7 +21,7 @@ export default {
     },
     color: {
       control: "radio",
-      options: ["filled", "tonal", "outlined", "standard"],
+      options: ["filled", "tonal", "outlined", "elevated", "standard"],
     },
   },
 } as Meta<typeof ButtonIcon>;
