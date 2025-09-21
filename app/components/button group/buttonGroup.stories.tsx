@@ -32,7 +32,8 @@ export default {
   },
 } as Meta<typeof ButtonGroup>;
 type Story = StoryObj<typeof ButtonGroup>;
-export const Default: Story = {
+
+export const SingleSelected: Story = {
   args: {
     type: "connected",
     size: "sm",
@@ -46,7 +47,7 @@ export const Default: Story = {
           <>
             <ButtonIcon
               shape="round"
-              width="wide"
+              width="default"
               size={size}
               icon={<FastRewindIcon />}
               className="bg-primary-container text-on-primary-container"
@@ -60,7 +61,7 @@ export const Default: Story = {
             />
             <ButtonIcon
               shape="round"
-              width="wide"
+              width="default"
               size={size}
               icon={<FastForwardIcon />}
               className="bg-primary-container text-on-primary-container"

@@ -1,5 +1,4 @@
 import { tv } from "tailwind-variants";
-import { Variants } from "framer-motion";
 export const buttonIconStyle = tv({
   base: "btn-i",
   variants: {
@@ -171,36 +170,28 @@ export const buttonIconStyle = tv({
   ],
 });
 
-export const buttonMotionVariants: Variants = {
-  default: (custom: [string, string]) => {
-    const [size, shape] = custom;
-    return {
-      scale: 1,
-      borderRadius:
-        shape === "round"
-          ? "50%"
-          : size === "xs"
-          ? "12px"
-          : size === "sm"
-          ? "12px"
-          : size === "md"
-          ? "16px"
-          : "28px",
-    };
-  },
-  selected: (custom: [string, string]) => {
-    const [size, shape] = custom;
-    return {
-      borderRadius:
-        shape !== "round"
-          ? "50%"
-          : size === "xs"
-          ? "12px"
-          : size === "sm"
-          ? "12px"
-          : size === "md"
-          ? "16px"
-          : "28px",
-    };
-  },
+const getBorderRadius = (shape: string, size: string, selected: boolean) => {
+  if (selected) {
+    if (shape === "square") return "50%";
+  }
+  switch (shape) {
+    case "round":
+      return "50%";
+    default: {
+      if (size === "xs" || size === "sm") return "12px";
+      if (size === "md") return "16px";
+      return "28px";
+    }
+  }
+};
+
+export const buttonVariants = {
+  normal: (custom: { shape: string; size: string }) => ({
+    scale: 1,
+    borderRadius: getBorderRadius(custom.shape, custom.size, false),
+  }),
+  selected: (custom: { shape: string; size: string }) => ({
+    scale: 1.2,
+    borderRadius: getBorderRadius(custom.shape, custom.size, true),
+  }),
 };
