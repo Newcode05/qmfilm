@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+
 import button from "./app/token/button/button.json";
 import buttonGroup from "./app/token/button/buttonGroup.json";
 import buttonIcon from "./app/token/button/buttonIcon.json";
+import buttonSplit from "./app/token/button/buttonSplit.json";
+
 import fab from "./app/token/fab/fab.json";
 import fabExtend from "./app/token/fab/fabExtend.json";
 
@@ -111,7 +114,7 @@ export default {
 
         "on-tertiary": "var(--color-on-tertiary)",
         "on-tertiary-container": "var(--color-on-tertiary-container)",
-        
+
         "on-surface": "var(--color-on-surface)",
         "on-surface-dark": "var(--color-on-surface-dark)",
         "on-surface-variant": "var(--color-on-surface-variant)",
@@ -155,6 +158,8 @@ export default {
         ...buttonGroup.standard.height,
         ...buttonGroup.connected.height,
         ...buttonIcon.height,
+        ...buttonSplit.height,
+
         ...fabExtend.height,
         ...searchBar.height,
       },
@@ -180,6 +185,7 @@ export default {
         ...buttonIcon.narrow.spacing,
         ...buttonIcon.default.spacing,
         ...buttonIcon.wide.spacing,
+        ...buttonSplit.spacing,
         ...fabExtend.spacing,
         ...searchBar.spacing,
       },
@@ -192,7 +198,6 @@ export default {
         "2xl": "1.75rem",
         "3xl": "2rem",
         "4xl": "3rem",
-        full: "9999px",
         ...button.borderRadius,
         ...fab.borderRadius,
         ...fabExtend.borderRadius,

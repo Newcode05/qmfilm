@@ -127,4 +127,23 @@
   .btn-i-wd-lg {
     @apply h-btn-i-lg px-btn-i-wd-lg-x rounded-xl;
   }
+  /*Button split*/
+  .btn-sp {
+    @apply relative flex
+    flex-row
+    justify-center items-center
+    rounded-full;
+  }
+  .btn-sp-xs {
+    @apply h-btn-sp-xs gap-btn-sp-xs-gap;
+  }
+  .btn-sp-sm {
+    @apply h-btn-sp-sm gap-btn-sp-sm-gap;
+  }
+  .btn-sp-md {
+    @apply h-btn-sp-md gap-btn-sp-md-gap;
+  }
+  .btn-sp-lg {
+    @apply h-btn-sp-lg gap-btn-sp-lg-gap;
+  }
 }

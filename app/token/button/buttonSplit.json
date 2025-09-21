@@ -1,0 +1,14 @@
+{
+  "height": {
+    "btn-sp-xs": "32px",
+    "btn-sp-sm": "40px",
+    "btn-sp-md": "56px",
+    "btn-sp-lg": "96px"
+  },
+  "spacing": {
+    "btn-sp-xs-gap": "2px",
+    "btn-sp-sm-gap": "2px",
+    "btn-sp-md-gap": "2px",
+    "btn-sp-lg-gap": "2px"
+  }
+}
