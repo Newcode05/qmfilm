@@ -15,6 +15,7 @@ export const Fab = forwardRef<HTMLButtonElement, FabProps>(
       color = "primary",
       size = "md",
       label = "Note",
+      onClick = () => {},
       icon,
       ...props
     },
@@ -29,7 +30,10 @@ export const Fab = forwardRef<HTMLButtonElement, FabProps>(
         aria-label={label}
         ref={megerRef(containerRef, ref)}
         className={fabStyle({ variant, size, color, className })}
-        onClick={(e) => createRipple(e.nativeEvent)}
+        onClick={(e) => {
+          createRipple(e.nativeEvent);
+          onClick(e);
+        }}
         style={{ position: "relative", overflow: "hidden" }}
         {...props}
       >

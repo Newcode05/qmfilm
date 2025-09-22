@@ -3,7 +3,7 @@ export const buttonIconStyle = tv({
   base: "btn-i",
   variants: {
     shape: {
-      round: "",
+      round: "rounded-full",
       square: "",
     },
     width: {
