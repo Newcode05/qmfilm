@@ -1,0 +1,12 @@
+@layer components {
+  .card {
+    @apply relative p-[16px] 
+    h-max w-max rounded-md
+    cursor-pointer overflow-hidden
+    before:content-[''] before:absolute
+    before:inset-0 before:bg-transparent
+    before:pointer-events-none
+    hover:before:opacity-[0.08]
+    active:before:opacity-[0.1];
+  }
+}
