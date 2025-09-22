@@ -2,8 +2,7 @@ import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { Card } from "./card";
 
 import { Button } from "../button/button";
-import { ButtonIcon } from "../button icon/buttonIcon";
-import FastRewindIcon from "@mui/icons-material/FastRewind";
+
 export default {
   title: "Components/Card/Card",
   component: Card,
