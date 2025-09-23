@@ -1,0 +1,11 @@
+@layer components {
+  .nav-bar {
+    @apply h-[64px];
+  }
+  .nav-bar-ver {
+    @apply py-[6px];
+  }
+  .nav-bar-hor {
+    @apply py-[12px];
+  }
+}

@@ -3,8 +3,12 @@ import { NavBarStyle } from "./navigationBar.style";
 import { HTMLAttributes } from "react";
 
 type NavBarVariant = VariantProps<typeof NavBarStyle>;
-
+type navItem = {
+  id: string;
+  icon: React.ReactNode;
+  label: string;
+}[];
 export type NavBarProps = HTMLAttributes<HTMLDivElement> &
   NavBarVariant & {
-    navitem?: React.ReactNode;
+    navItem: navItem;
   };
