@@ -11,4 +11,6 @@ type navItem = {
 export type NavBarProps = HTMLAttributes<HTMLDivElement> &
   NavBarVariant & {
     navItem: navItem;
+    className?:string;
+    classNameNavItem?:string;
   };
