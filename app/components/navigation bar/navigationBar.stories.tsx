@@ -19,6 +19,9 @@ export default {
     className: {
       control: "text",
     },
+    classNameNavItem: {
+      control: "text",
+    },
     variant: {
       control: "radio",
       options: ["vertical", "horizontal"],
