@@ -68,6 +68,9 @@
   --color-danger-hover: #dc2626;
   --color-danger-active: #b91c1c;
 
+  --color-error: #b3261e;
+  --color-on-error: #ffffff;
+
   --color-warning: #f59e0b;
   --color-on-warning: #212121;
   --color-warning-hover: #d97706;

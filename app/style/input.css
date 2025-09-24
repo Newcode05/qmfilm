@@ -1,0 +1,20 @@
+@layer components {
+  .checkbox {
+    @apply relative w-[18px] h-[18px] 
+    flex justify-center items-center 
+    rounded-[2px] cursor-pointer
+    before:content-[''] before:absolute
+    before:inset-[-11px]
+    before:rounded-full before:opacity-0
+    before:pointer-events-none
+    group-hover:before:opacity-[0.08]
+    after:content-[''] after:absolute
+    after:bg-transparent
+    after:inset-[-15px] after:rounded-full
+    has-[:disabled]:opacity-[0.38]
+    has-[:disabled]:cursor-not-allowed
+    has-[input:focus-visible]:after:outline-secondary    
+    has-[input:focus-visible]:after:outline-[3px]
+    has-[input:focus-visible]:after:outline-offset-[2px];
+  }
+}

@@ -8,6 +8,7 @@
 @import "./style/fab.css";
 @import "./style/search.css";
 @import "./style/card.css";
+@import "./style/input.css";
 
 @config "../tailwind.config.mjs";
 

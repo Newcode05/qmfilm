@@ -78,6 +78,9 @@ export default {
           hover: "var(--color-danger-hover)",
           active: "var(--color-danger-active)",
         },
+        error: {
+          DEFAULT: "var(--color-error)",
+        },
         warning: {
           DEFAULT: "var(--color-warning)",
           hover: "var(--color-warning-hover)",
@@ -97,6 +100,7 @@ export default {
           "tertiary-container": "var(--color-on-tertiary-container)",
           surface: "var(--color-on-surface)",
           "surface-variant": "var(--color-on-surface-variant)",
+          error: "var(--color-on-error)",
         },
         outline: {
           DEFAULT: "var(--color-outline)",
@@ -120,6 +124,7 @@ export default {
         "on-surface-variant": "var(--color-on-surface-variant)",
 
         "on-darger": "var(--color-on-danger)",
+        "on-error": "var(--color-on-error)",
         "on-warning": "var(--color-on-warning)",
         "on-success": "var(--color-on-success)",
         dark: "#111827",
