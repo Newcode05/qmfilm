@@ -9,19 +9,33 @@ import EditIcon from "@mui/icons-material/Edit";
 export default {
   title: "Components/Nav Bar/Nav Bar",
   component: NavBar,
+  tags: ["autodocs"],
+  argTypes: {
+    navItem: {
+      table: {
+        disable: true,
+      },
+    },
+    className: {
+      control: "text",
+    },
+    variant: {
+      control: "radio",
+      options: ["vertical", "horizontal"],
+    },
+  },
 } as Meta<typeof NavBar>;
 
 type Story = StoryObj<typeof NavBar>;
-
+const listItem = [
+  { id: "Home", icon: <EmailIcon />, label: "Email" },
+  { id: "Buy", icon: <MessageIcon />, label: "Message" },
+  { id: "Watch", icon: <FolderSharedIcon />, label: "Folder" },
+  { id: "User", icon: <EditIcon />, label: "Edit" },
+];
 export const Default: Story = {
-  args: {},
-  render: () => {
-    const listItem = [
-      { id: "Home", icon: <EmailIcon />, label: "Email" },
-      { id: "Buy", icon: <MessageIcon />, label: "Message" },
-      { id: "Watch", icon: <FolderSharedIcon />, label: "Folder" },
-      { id: "User", icon: <EditIcon />, label: "Edit" },
-    ];
-    return <NavBar navItem={listItem} />;
+  args: {
+    variant: "vertical",
+    navItem: listItem,
   },
 };

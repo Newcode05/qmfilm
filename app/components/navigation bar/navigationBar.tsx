@@ -39,10 +39,9 @@ export const NavBar: React.FC<NavBarProps> = ({
                       stiffness: 450,
                       damping: 20,
                     }}
-                    className="absolute w-[56px] h-[32px] l-0 t-0 rounded-md z-[0] bg-secondary-container"
+                    className="absolute w-[56px] h-[32px] ledt-0 top-0 rounded-full z-[0] bg-secondary-container"
                   ></motion.div>
                   <div
-                    key={index}
                     className={`
                     ${
                       selected === item.id
@@ -54,7 +53,6 @@ export const NavBar: React.FC<NavBarProps> = ({
                     {item.icon}
                   </div>
                   <div
-                    key={index}
                     className={`
                     ${
                       selected === item.id
@@ -69,28 +67,44 @@ export const NavBar: React.FC<NavBarProps> = ({
             ))
           : navItem.map((item, index) => (
               <div
-                className="w-[30px] rounded-[20px] flex flex-row gap-[4px] items-center"
-                onClick={() => setSelected(item.id)}
+                key={index}
+                className="flex-1 flex flex-row justify-center items-center"
               >
                 <div
-                  key={index}
-                  className={
-                    selected === item.id
-                      ? "text-on-secondary-container"
-                      : "text-on-surface-variant"
-                  }
+                  className="relative px-[16px] w-max h-[40px] rounded-full flex flex-row gap-[4px] items-center z-[10]"
+                  onClick={() => setSelected(item.id)}
                 >
-                  {item.icon}
-                </div>
-                <div
-                  key={index}
-                  className={
-                    selected === item.id
-                      ? "text-on-secondary"
-                      : "text-on-surface-variant"
-                  }
-                >
-                  {item.label}
+                  <motion.div
+                    initial={false}
+                    animate={{
+                      scaleX: selected === item.id ? 1 : 0,
+                      opacity: selected === item.id ? 1 : 0,
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 450,
+                      damping: 20,
+                    }}
+                    className="absolute w-full h-full left-0 top-0 rounded-full z-[0] bg-secondary-container"
+                  ></motion.div>
+                  <div
+                    className={
+                      selected === item.id
+                        ? "text-on-secondary-container z-[10] text-[12px]"
+                        : "text-on-surface-variant z-[10] text-[12px]"
+                    }
+                  >
+                    {item.icon}
+                  </div>
+                  <div
+                    className={
+                      selected === item.id
+                        ? "text-on-secondary-container z-[10] text-[12px]"
+                        : "text-on-surface-variant z-[10] text-[12px]"
+                    }
+                  >
+                    {item.label}
+                  </div>
                 </div>
               </div>
             ))
