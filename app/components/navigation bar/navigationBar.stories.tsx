@@ -1,10 +1,14 @@
+import React from "react";
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { NavBar } from "./navigationBar";
-
+import { Badge } from "../badge/badge";
 import EmailIcon from "@mui/icons-material/Email";
 import MessageIcon from "@mui/icons-material/Message";
 import FolderSharedIcon from "@mui/icons-material/FolderShared";
 import EditIcon from "@mui/icons-material/Edit";
+import { motion } from "framer-motion";
+import { BadgeProps } from "../badge/badge.type";
+import { usePathname } from "next/navigation";
 
 export default {
   title: "Components/Nav Bar/Nav Bar",
@@ -30,15 +34,63 @@ export default {
 } as Meta<typeof NavBar>;
 
 type Story = StoryObj<typeof NavBar>;
-const listItem = [
-  { id: "Home", icon: <EmailIcon />, label: "Email" },
-  { id: "Buy", icon: <MessageIcon />, label: "Message" },
-  { id: "Watch", icon: <FolderSharedIcon />, label: "Folder" },
-  { id: "User", icon: <EditIcon />, label: "Edit" },
-];
-export const Default: Story = {
-  args: {
-    variant: "vertical",
-    navItem: listItem,
+export const TestNav = () => {
+  const pathname = usePathname();
+  const listItem = [
+    {
+      id: "/Home",
+      label: "Email",
+      path: "/email",
+      active: pathname === "/email",
+      badge: {
+        icon: <EmailIcon />,
+        size: "sm",
+        anchorOrigin: { vertical: "top", horizontal: "right" },
+        label: 999,
+      } as BadgeProps,
+    },
+    {
+      id: "/Buy",
+      label: "Message",
+      path: "/message",
+      active: false,
+      badge: {
+        icon: <EmailIcon />,
+        size: "lg",
+        anchorOrigin: { vertical: "top", horizontal: "right" },
+        label: 9999,
+      } as BadgeProps,
+    },
+    {
+      id: "/Watch",
+      label: "Folder",
+      path: "/folder",
+      active: false,
+      badge: {
+        icon: <EmailIcon />,
+        size: "sm",
+        anchorOrigin: { vertical: "top", horizontal: "right" },
+        label: 999,
+      } as BadgeProps,
+    },
+    {
+      id: "/User",
+      label: "Edit",
+      path: "/edit",
+      active: false,
+      badge: {
+        icon: <EmailIcon />,
+        size: "sm",
+        anchorOrigin: { vertical: "top", horizontal: "right" },
+        label: 999,
+      } as BadgeProps,
+    },
+  ];
+  return <NavBar listNavItem={listItem} variant="vertical" />;
+};
+export const New: Story = {
+  args: {},
+  render: () => {
+    return <TestNav />;
   },
 };

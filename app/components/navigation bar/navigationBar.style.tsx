@@ -12,7 +12,8 @@ export const NavBarStyle = tv({
         "w-[450px] h-[64px] flex flex-row justify-center items-center bg-surface-variant cursor-pointer",
       navItemContainer:
         "relative flex-1 flex justify-center items-center h-[64px]",
-      navItem: "group relative flex gap-[4px] items-center justify-center",
+      navItem:
+        "group relative flex gap-[4px] items-center justify-center",
       indicatorActive:
         "absolute top-0 left-0 rounded-full z-[0] bg-secondary-container",
       statelayer:

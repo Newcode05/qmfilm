@@ -1,16 +1,19 @@
 import { VariantProps } from "tailwind-variants";
 import { NavBarStyle } from "./navigationBar.style";
 import { HTMLAttributes } from "react";
+import { BadgeProps } from "../badge/badge.type";
 
 type NavBarVariant = VariantProps<typeof NavBarStyle>;
-type navItem = {
+export type navItem = {
   id: string;
-  icon: React.ReactNode;
   label: string;
-}[];
+  path: string;
+  active: boolean;
+  badge: BadgeProps;
+};
 export type NavBarProps = HTMLAttributes<HTMLDivElement> &
   NavBarVariant & {
-    navItem: navItem;
-    className?:string;
-    classNameNavItem?:string;
+    listNavItem: navItem[];
+    className?: string;
+    classNameNavItem?: string;
   };
